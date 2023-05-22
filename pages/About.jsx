@@ -16,7 +16,7 @@ const About = () => {
     </blockquote>
     <figcaption class="flex items-center justify-center mt-6 space-x-3">
     <Image  class="w-14 h-14 rounded-full" src={Monogram} alt={'Monogram'} height="120" width="120" />
-        <img class="w-14 h-14 rounded-full" src="https://cdn.shopify.com/s/files/1/0348/0017/3195/products/Monogram-Couture-G-S-2_7285d7fb-d41d-4341-8e9d-3a3118590811.png?v=1629922545" alt="profile picture"/>
+        <img class="w-14 h-14 rounded-full" src="https://st2.depositphotos.com/33928496/47712/v/600/depositphotos_477129268-stock-illustration-logo-letter-monogram-triangle-shape.jpg" alt="profile picture"/>
         <div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
             <cite class="pr-3 font-medium text-gray-900 dark:text-white">Listomania Team</cite>
             <cite class="pl-3 text-sm text-gray-500 dark:text-gray-400">Future Web Devs</cite>
