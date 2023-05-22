@@ -1,6 +1,7 @@
+import { useClient } from "use-supabase";
+import { getCurrentUser } from "../utils/data";
 import LoggedInHeader from "../components/LoggedInHeader";
 import React, { useState, useEffect } from "react";
-import { getCurrentUser } from "../utils/data";
 import CreateList from "./CreateList";
 import { useRouter } from "next/router";
 
@@ -8,6 +9,8 @@ const User = () => {
   const [currentUser, setCurrentUser] = useState(null);
   const [listItems, setListItems] = useState(["", ""]);
   const router = useRouter();
+
+  const client = useClient(); // Initialize the Supabase client
 
   useEffect(() => {
     const fetchUserData = async () => {
@@ -30,7 +33,9 @@ const User = () => {
 
   return (
     <>
-      <LoggedInHeader />
+      <use client> {/* Mark LoggedInHeader as a Client Component */}
+        <LoggedInHeader />
+      </use>
       <h3 className="text-center text-2xl font-bold">Your Lists</h3>
       {currentUser && currentUser.listItems && (
         <ul>
@@ -39,7 +44,6 @@ const User = () => {
           ))}
         </ul>
       )}
-    
     </>
   );
 };
