@@ -1,4 +1,5 @@
-import { useClient } from "use-supabase";
+"use client"
+// import { useClient } from "use-supabase";
 import { getCurrentUser } from "../utils/data";
 import LoggedInHeader from "../components/LoggedInHeader";
 import React, { useState, useEffect } from "react";
