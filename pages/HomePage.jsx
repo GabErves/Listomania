@@ -52,8 +52,9 @@ const HomePage = () => {
   return (
     <div>
       {/* Switch between each header, each component might need this...? */}
-      {users && <LoggedInHeader />}
-      {!users && <Header />}
+      <Header/>
+      {/* {users && <LoggedInHeader />}
+      {!users && <Header />} */}
       {/* Render other content */}
       <h3 className="text-center text-5xl font-bold p-10">
         Welcome to Listomania!
